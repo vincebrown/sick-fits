@@ -21,7 +21,7 @@ const SIGNUP_MUTATION = gql`
   }
 `
 
-export default class Signup extends Component {
+class Signup extends Component {
   state = {
     email: '',
     name: '',
@@ -43,6 +43,7 @@ export default class Signup extends Component {
         {(signup, { error, loading }) => (
           <Form
             method="post"
+            data-test="form"
             onSubmit={async e => {
               e.preventDefault()
               const response = await signup()
@@ -92,3 +93,6 @@ export default class Signup extends Component {
     )
   }
 }
+
+export default Signup
+export { SIGNUP_MUTATION }
