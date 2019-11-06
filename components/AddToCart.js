@@ -15,7 +15,7 @@ const ADD_TO_CART_MUTATION = gql`
   }
 `
 
-export default class AddToCart extends React.Component {
+class AddToCart extends React.Component {
   static propTypes = {
     id: PropTypes.string,
   }
@@ -39,3 +39,6 @@ export default class AddToCart extends React.Component {
     )
   }
 }
+
+export default AddToCart
+export { ADD_TO_CART_MUTATION }
