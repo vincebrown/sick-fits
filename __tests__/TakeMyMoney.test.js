@@ -4,14 +4,13 @@ import wait from 'waait'
 import toJSON from 'enzyme-to-json'
 import Router from 'next/router'
 import { MockedProvider } from 'react-apollo/test-utils'
-import { ApolloConusumer, ApolloConsumer } from 'react-apollo'
 import NProgress from 'nprogress'
 
 // Libs
 import { fakeCartItem, fakeUser } from '../lib/testUtils'
 
 // Components
-import TakeMyMoney, { CREATE_ORDER_MUTATION } from '../components/TakeMyMoney'
+import TakeMyMoney from '../components/TakeMyMoney'
 import { CURRENT_USER_QUERY } from '../components/User'
 
 Router.router = { push() {} }
