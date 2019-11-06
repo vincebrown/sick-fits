@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RequestReset/> calls the mutation 1`] = `
+<p>
+  Success! Check your email for a reset link
+</p>
+`;
+
+exports[`<RequestReset/> renders and matches snapshot 1`] = `
+<form
+  className="Form-sc-16eu58y-0 kdiGKW"
+  data-test="form"
+  method="post"
+  onSubmit={[Function]}
+>
+  <fieldset
+    aria-busy={false}
+    disabled={false}
+  >
+    <h2>
+      Request a Password Reset
+    </h2>
+    <DisplayError
+      error={Object {}}
+    />
+    <label
+      htmlFor="email"
+    >
+      Email
+      <input
+        name="email"
+        onChange={[Function]}
+        placeholder="email"
+        type="email"
+        value=""
+      />
+    </label>
+    <button
+      type="submit"
+    >
+      Request Reset
+    </button>
+  </fieldset>
+</form>
+`;
