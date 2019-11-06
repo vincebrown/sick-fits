@@ -24,7 +24,7 @@ const BigButton = styled.button`
   }
 `
 
-export default class RemoveFromCart extends React.Component {
+class RemoveFromCart extends React.Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
   }
@@ -74,3 +74,6 @@ export default class RemoveFromCart extends React.Component {
     )
   }
 }
+
+export default RemoveFromCart
+export { REMOVE_FROM_CART_MUTATION }
